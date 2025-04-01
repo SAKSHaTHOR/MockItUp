@@ -47,10 +47,10 @@ const AuthForm = ({ type }: { type: FormType }) => {
       }
     } catch (error) {
       console.log(error);
+      console.log(values);//extra line
       toast.error(`There was an error: ${error}`);
     }
   }
-
   const isSignIn = type === "sign-in";
   return (
     <div className="card-border lg:min-w-[566px]">
