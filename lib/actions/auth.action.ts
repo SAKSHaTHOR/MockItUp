@@ -26,7 +26,7 @@ export async function signUp(params: SignUpParams){
             message:'Account created successfully. please sign in.'
         }
 
-    } catch(e: any){
+    } catch(e:any){
         console.error('Error creating a user', e);
 
         if(e.code === 'auth/email-already-exists'){
