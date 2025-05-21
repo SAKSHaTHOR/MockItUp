@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { getCurrentUser } from "@/lib/actions/auth.action";
 
-const Feedback = async ({ params }: RouteParams) => {
+const Feedback = async ({ params }:{ params: { id: string } }) => {
   const { id } = await params;
   const user = await getCurrentUser();
 
@@ -57,7 +57,7 @@ const Feedback = async ({ params }: RouteParams) => {
         </div>
       </div>
 
-      <hr />
+      <hr className="my-6"/>
 
       <p>{feedback?.finalAssessment}</p>
 
