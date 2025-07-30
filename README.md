@@ -69,10 +69,6 @@ MockitUp is an AI-powered platform for practicing job interviews and receiving i
 
 Deploy easily on [Vercel](https://vercel.com/) or any platform supporting Next.js.
 
-## License
-
-MIT
-
 ---
 
 **Made with ❤️ for job seekers and learners.**
